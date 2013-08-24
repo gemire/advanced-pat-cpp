@@ -3,7 +3,7 @@
 #include <functional>
 #include <set>
 #include <string>
-#include <cstring>
+#include <vector>
 using namespace std;
 
 struct Entry {
@@ -36,10 +36,9 @@ int main() {
 		}
 	}
 	cout << ranklist.size() << endl;
-	int *ranks = new int[N+1]();
-	int *eqcnt = new int[N+1]();
-	int *lasts = new int[N+1];
-	memset(lasts, -1, sizeof(lasts));
+	vector<int> ranks = vector<int>(N+1);
+	vector<int> eqcnt = vector<int>(N+1);
+	vector<int> lasts = vector<int>(N+1, -1);
 	set<Entry>::iterator it;
 	for (it=ranklist.begin(); it!=ranklist.end(); it++) {
 		if (it->score == lasts[0]) {
@@ -60,7 +59,4 @@ int main() {
 		cout << it->id << ' ' << ranks[0] << ' '
 			<< loc << ' ' << ranks[loc] << endl;
 	}
-	delete[] ranks;
-	delete[] eqcnt;
-	delete[] lasts;
 }
