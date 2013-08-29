@@ -7,13 +7,13 @@ int a2[MAX_LEN];
 
 int main() {
 	int N1, N2, N;
-	scanf("%d", &N1);
+	scanf_s("%d", &N1);
 	for (int i = 0; i < N1; i++) {
-		scanf("%d", &a1[i]);
+		scanf_s("%d", &a1[i]);
 	}
-	scanf("%d", &N2);
+	scanf_s("%d", &N2);
 	for (int i = 0; i < N2; i++) {
-		scanf("%d", &a2[i]);
+		scanf_s("%d", &a2[i]);
 	}
 	N = N1 + N2;
 	N = N % 2 == 0 ? N/2 : N/2 + 1;
