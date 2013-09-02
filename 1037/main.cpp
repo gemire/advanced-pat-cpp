@@ -2,9 +2,9 @@
 #include <queue>
 #include <functional>
 using namespace std;
+#pragma warning(disable:4996)
 
 int main() {
-	//#pragma warning(disable:4996)
 	//freopen("..\\advanced-pat-python\\test.txt", "r", stdin);
 	int NC, NP;
 	priority_queue<int, vector<int>, greater<int> > cneg, pneg;

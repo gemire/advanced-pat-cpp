@@ -3,6 +3,7 @@
 #include <string>
 #include <iostream>
 using namespace std;
+#pragma warning(disable:4996)
 
 class mstring : public string {
 public:
@@ -16,7 +17,6 @@ public:
 };
 
 int main() {
-	//#pragma warning(disable:4996)
 	//freopen("..\\advanced-pat-python\\test.txt", "r", stdin);
 	int N;
 	cin >> N;

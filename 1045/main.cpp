@@ -2,10 +2,10 @@
 #include <vector>
 #include <cstring>
 using namespace std;
+#pragma warning(disable:4996)
 
 int color_weight[201];
 int main() {
-	//#pragma warning(disable:4996)
 	//freopen("..\\advanced-pat-python\\test.txt", "r", stdin);
 	memset(color_weight, 0, sizeof(color_weight));
 	int N, color;

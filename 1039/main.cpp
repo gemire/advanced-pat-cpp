@@ -2,6 +2,7 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
+#pragma warning(disable:4996)
 
 int name2int(char name[5]) {
 	return (name[0] - 'A') * 26 * 26 * 10
@@ -14,7 +15,6 @@ vector<int> stu[180000];
 vector<int> course[2600];
 
 int main() {
-	//#pragma warning(disable:4996)
 	//freopen("..\\advanced-pat-python\\test.txt", "r", stdin);
 	int N, K;
 	scanf("%d%d", &N, &K);

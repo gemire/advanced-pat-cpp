@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+#pragma warning(disable:4996)
 
 vector<int> preOrder;
 bool is_mirror = false;
@@ -62,7 +63,6 @@ Tree* build_tree(vector<int>::iterator beg,
 	}
 
 int main() {
-	//#pragma warning(disable:4996)
 	//freopen("..\\advanced-pat-python\\test.txt", "r", stdin);
 	int N, n;
 	cin >> N;

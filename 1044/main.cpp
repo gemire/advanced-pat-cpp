@@ -1,6 +1,8 @@
 #include <cstdio>
 #include <vector>
 using namespace std;
+#pragma warning(disable:4996)
+s
 void get_options(vector<int> &chain, int N, int M,
 				 vector<pair<int, int> > &options) {
 	int beg = 0, cur = 0, cost = chain[beg], min_cost = -1;
@@ -23,7 +25,6 @@ void get_options(vector<int> &chain, int N, int M,
 }
 
 int main() {
-	//#pragma warning(disable:4996)
 	//freopen("..\\advanced-pat-python\\test.txt", "r", stdin);
 	int N, M;
 	scanf("%d%d", &N, &M);

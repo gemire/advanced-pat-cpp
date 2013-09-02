@@ -1,11 +1,11 @@
 #include <cstdio>
 #include <cstring>
 using namespace std;
+#pragma warning(disable:4996)
 
 int cnt[10005];
 int nums[100005];
 int main() {
-	//#pragma warning(disable:4996)
 	//freopen("..\\advanced-pat-python\\test.txt", "r", stdin);
 	memset(cnt, 0, sizeof(cnt));
 	memset(nums, -1, sizeof(nums));
